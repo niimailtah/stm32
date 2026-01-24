@@ -1,4 +1,4 @@
-# Порты вводв-вывода. Вывод
+# Порты ввода-вывода. Вывод
 
 Пробуем дергать порты ввода-вывода
 
@@ -18,7 +18,7 @@ C:\tools\ST\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tool
 ```
 target remote localhost:3333
 monitor reset init
-monitor flash write_image erase 6_StructureAccess.elf
+monitor flash write_image erase 7_GpioOutput.elf
 monitor reset init
 monitor resume
 ```
