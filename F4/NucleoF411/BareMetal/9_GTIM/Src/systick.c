@@ -23,7 +23,7 @@ void systick_msec_delay(uint32_t delay)
 	/*Enable systick*/
 	SysTick->CTRL |= CTRL_ENABLE;
 
-	for(int i = 0; i < delay; ++i)
+	for (int i = 0; i < delay; ++i)
 	{
 		while ((SysTick->CTRL & CTRL_COUNTFLAG) == 0) {}
 	}

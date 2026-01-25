@@ -6,7 +6,7 @@ int main(void)
 	/*Initialize LED*/
 	led_init();
 
-	while (1)
+	while (true)
 	{
 		/*Delay for 500ms*/
 		systick_msec_delay(500);

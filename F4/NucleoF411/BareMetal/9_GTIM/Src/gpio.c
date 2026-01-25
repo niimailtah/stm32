@@ -30,6 +30,7 @@ void led_off(void)
 	GPIOA->BSRR |= LED_BR5;
 }
 
+
 void led_toggle(void)
 {
 	/*Toggle PA5*/
@@ -59,5 +60,4 @@ bool get_btn_state(void)
 	{
 		return true;
 	}
-
 }
