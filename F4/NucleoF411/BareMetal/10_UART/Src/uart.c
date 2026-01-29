@@ -17,6 +17,7 @@ static void uart_write(int ch);
 int __io_putchar(int ch)
 {
 	uart_write(ch);
+
 	return ch;
 }
 
@@ -39,7 +40,7 @@ void uart_init(void)
      RCC->APB1ENR |=	UART2EN;
 
 	/*Configure uart baudrate*/
-     uart_set_baudrate(APB1_CLK,DBG_UART_BAUDRATE);
+     uart_set_baudrate(APB1_CLK, DBG_UART_BAUDRATE);
 
 	/*Configure transfer direction*/
      USART2->CR1 = CR1_TE;
@@ -51,17 +52,20 @@ void uart_init(void)
 static void uart_write(int ch)
 {
 	/*Make sure transmit data register is empty*/
-	while (!(USART2->SR & SR_TXE)) {}
+	while (!(USART2->SR & SR_TXE))
+	{
+	}
 
 	/*Write to transmit data register*/
 	USART2->DR = (ch & 0xFF);
 }
-static uint16_t compute_uart_bd(uint32_t periph_clk,uint32_t baudrate)
+
+static uint16_t compute_uart_bd(uint32_t periph_clk, uint32_t baudrate)
 {
-	return((periph_clk + (baudrate/2U))/baudrate);
+	return ((periph_clk + (baudrate/2U)) / baudrate);
 }
 
-static void uart_set_baudrate(uint32_t periph_clk,uint32_t baudrate)
+static void uart_set_baudrate(uint32_t periph_clk, uint32_t baudrate)
 {
-	USART2->BRR = compute_uart_bd(periph_clk,baudrate);
+	USART2->BRR = compute_uart_bd(periph_clk, baudrate);
 }

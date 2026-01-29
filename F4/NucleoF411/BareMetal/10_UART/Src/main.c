@@ -10,6 +10,5 @@ int main(void)
 	while (true)
 	{
 		printf("Hello from STM32...\r\n");
-
 	}
 }

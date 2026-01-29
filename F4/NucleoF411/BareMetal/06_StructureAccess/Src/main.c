@@ -18,6 +18,7 @@
 
 // 0: Include standard integer types header for fixed-width integer types
 #include <stdint.h>
+#include <stdbool.h>
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
@@ -26,16 +27,16 @@
 // 1: GPIO_TypeDef structure definition
 typedef struct
 {
-  volatile uint32_t MODER;    /*offset: 0x00      */
-  volatile uint32_t OTYPER;   /*offset: 0x04      */
-  volatile uint32_t OSPEEDR;  /*offset: 0x08      */
-  volatile uint32_t PUPDR;    /*offset: 0x0C      */
-  volatile uint32_t IDR;      /*offset: 0x10      */
-  volatile uint32_t ODR;      /*offset: 0x14      */
-  volatile uint32_t BSRR;     /*offset: 0x18      */
-  volatile uint32_t LCKR;     /*offset: 0x1C      */
-  volatile uint32_t AFRL;     /*offset: 0x20	 */
-  volatile uint32_t AFRH;     /*offset: 0x24 	 */
+  volatile uint32_t MODER;    /* offset: 0x00 */
+  volatile uint32_t OTYPER;   /* offset: 0x04 */
+  volatile uint32_t OSPEEDR;  /* offset: 0x08 */
+  volatile uint32_t PUPDR;    /* offset: 0x0C */
+  volatile uint32_t IDR;      /* offset: 0x10 */
+  volatile uint32_t ODR;      /* offset: 0x14 */
+  volatile uint32_t BSRR;     /* offset: 0x18 */
+  volatile uint32_t LCKR;     /* offset: 0x1C */
+  volatile uint32_t AFRL;     /* offset: 0x20 */
+  volatile uint32_t AFRH;     /* offset: 0x24 */
 
 } GPIO_TypeDef;
 
@@ -47,14 +48,13 @@ typedef struct
 
 } RCC_TypeDef;
 
-
 // 3: Base address definitions
-#define 	RCC_BASE	 0x40023800
-#define 	GPIOA_BASE   0x40020000
+#define     RCC_BASE     0x40023800
+#define     GPIOA_BASE   0x40020000
 
 // 4: Peripheral pointer definitions
-#define RCC		    ((RCC_TypeDef*) RCC_BASE)
-#define GPIOA		((GPIO_TypeDef*)GPIOA_BASE)
+#define RCC	    ((RCC_TypeDef*) RCC_BASE)
+#define GPIOA   ((GPIO_TypeDef*)GPIOA_BASE)
 
 //5: Bit mask for enabling GPIOA (bit 0)
 #define GPIOAEN       (1U<<0)
@@ -73,14 +73,14 @@ int main(void)
 	 GPIOA->MODER &= ~(1U<<11); //  11: Set bit 11 to 0
 
     //  21: Start of infinite loop
-    while (1)
+    while (true)
     {
     	//  12: Set PA5(LED_PIN) high
 		GPIOA->ODR ^= LED_PIN;
 
         // 13: Simple delay
-		for (int i = 0; i < 100000; ++i) {}
-
+		for (int i = 0; i < 100000; ++i)
+		{
+		}
     }
-
 }
