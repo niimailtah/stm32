@@ -410,5 +410,4 @@ MigrationBackup/
 .ionide/
 
 # STM32CubeIDE
-*.s
 *.launch

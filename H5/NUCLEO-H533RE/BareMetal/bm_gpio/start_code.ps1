@@ -1,0 +1,7 @@
+# 111
+
+$project_path = "d:\Docs\repos\stm32\H5\NUCLEO-H533RE\BareMetal\bm_gpio\"
+
+Set-Location -Path $project_path
+& "./config_envs.ps1"
+code .

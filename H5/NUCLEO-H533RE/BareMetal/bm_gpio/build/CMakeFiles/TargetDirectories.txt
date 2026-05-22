@@ -1,0 +1,4 @@
+D:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/build/CMakeFiles/firmware.elf.dir
+D:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/build/CMakeFiles/flash_custom_target.dir
+D:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/build/CMakeFiles/edit_cache.dir
+D:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/build/CMakeFiles/rebuild_cache.dir
