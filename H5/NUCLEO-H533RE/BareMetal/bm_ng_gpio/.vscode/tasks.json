@@ -1,0 +1,58 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "CubeIDE: Compile project",
+            "command": "arm-none-eabi-gcc",
+            "args": [
+                "-mcpu=cortex-m3",
+                "-mthumb",
+                // "-nostdlib",
+                "-I",
+                "inc",
+                "-T",
+                "STM32F411RETX_FLASH.ld",
+                "startup/startup_stm32f411retx.s",
+                "src/config.c",
+                "src/GPIO.c",
+                "src/LED.c",
+                "src/Timers.c",
+                "src/main.cpp",
+                "src/syscalls.c",
+                "src/sysmem.c",
+                "-o",
+                "firmware.elf"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "CubeProg: Flash project (SWD)",
+            "group": "build",
+            "command": "STM32_Programmer_CLI",
+            "args": [
+                "--connect",
+                "port=swd",
+                "mode=UR",
+                "--download",
+                "build/firmware.bin",
+                // "build/${workspaceFolderBasename}.bin",
+                // "firmware.elf",
+                "0x08000000",
+                "-hardRst",
+                "-rst",
+                "--start"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+    ]
+}

@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = -ID:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/inc
 
-C_FLAGS = -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+C_FLAGS = -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m33 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -ID:/Docs/repos/stm32/H5/NUCLEO-H533RE/BareMetal/bm_gpio/inc
 
-CXX_FLAGS = -g -std=gnu++17 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+CXX_FLAGS = -g -std=gnu++17 -mfloat-abi=soft -mcpu=cortex-m33 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
