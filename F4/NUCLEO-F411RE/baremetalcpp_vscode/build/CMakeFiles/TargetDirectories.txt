@@ -1,0 +1,4 @@
+D:/Docs/sources/baremetalcpp/build/CMakeFiles/firmware.elf.dir
+D:/Docs/sources/baremetalcpp/build/CMakeFiles/flash_custom_target.dir
+D:/Docs/sources/baremetalcpp/build/CMakeFiles/edit_cache.dir
+D:/Docs/sources/baremetalcpp/build/CMakeFiles/rebuild_cache.dir

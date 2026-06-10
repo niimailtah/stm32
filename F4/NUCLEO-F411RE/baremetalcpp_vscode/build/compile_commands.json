@@ -1,0 +1,50 @@
+[
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/GPIO.c.obj -c D:/Docs/sources/baremetalcpp/Src/GPIO.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/GPIO.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/GPIO.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/LED.c.obj -c D:/Docs/sources/baremetalcpp/Src/LED.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/LED.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/LED.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/Timers.c.obj -c D:/Docs/sources/baremetalcpp/Src/Timers.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/Timers.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/Timers.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/config.c.obj -c D:/Docs/sources/baremetalcpp/Src/config.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/config.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/config.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-g++.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu++17 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/main.cpp.obj -c D:/Docs/sources/baremetalcpp/Src/main.cpp",
+  "file": "D:/Docs/sources/baremetalcpp/Src/main.cpp",
+  "output": "CMakeFiles/firmware.elf.dir/Src/main.cpp.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/syscalls.c.obj -c D:/Docs/sources/baremetalcpp/Src/syscalls.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/syscalls.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/syscalls.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -std=gnu11 -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Src/sysmem.c.obj -c D:/Docs/sources/baremetalcpp/Src/sysmem.c",
+  "file": "D:/Docs/sources/baremetalcpp/Src/sysmem.c",
+  "output": "CMakeFiles/firmware.elf.dir/Src/sysmem.c.obj"
+},
+{
+  "directory": "D:/Docs/sources/baremetalcpp/build",
+  "command": "C:/ST/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gcc.exe  -ID:/Docs/sources/baremetalcpp/inc -g -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -o CMakeFiles/firmware.elf.dir/Startup/startup_stm32f411retx.s.obj -c D:/Docs/sources/baremetalcpp/Startup/startup_stm32f411retx.s",
+  "file": "D:/Docs/sources/baremetalcpp/Startup/startup_stm32f411retx.s",
+  "output": "CMakeFiles/firmware.elf.dir/Startup/startup_stm32f411retx.s.obj"
+}
+]

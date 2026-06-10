@@ -1,0 +1,7 @@
+### Pins
+
+VCC - +5V
+GND - GND
+STB - PB7
+CLK - PB0
+DIO - PA12

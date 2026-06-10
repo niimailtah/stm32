@@ -1,0 +1,20 @@
+/** @file cppmain.h
+ *
+ * @author niimailtah
+ * @date 2026-02-18
+ */
+
+#ifndef PROGRAM_INC_CPPMAIN_H_
+#define PROGRAM_INC_CPPMAIN_H_
+
+#ifdef __cplusplus
+ extern "C" {
+#endif
+
+void cppMain(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* PROGRAM_INC_CPPMAIN_H_ */

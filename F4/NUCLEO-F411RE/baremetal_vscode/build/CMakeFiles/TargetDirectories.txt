@@ -1,0 +1,3 @@
+C:/Users/chuwi/Documents/tutor/baremetal/build/CMakeFiles/firmware.elf.dir
+C:/Users/chuwi/Documents/tutor/baremetal/build/CMakeFiles/edit_cache.dir
+C:/Users/chuwi/Documents/tutor/baremetal/build/CMakeFiles/rebuild_cache.dir
