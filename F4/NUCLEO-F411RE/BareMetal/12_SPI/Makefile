@@ -11,7 +11,7 @@ INCDIR += -I$(MK_PATH)
 INCDIR += -I$(WORKSPACE_LOC)
 
 # DEPENDENCIES_GRAPHVIZ=Y
-TARGET=adxl345_spi
+TARGET=spi
 
 # include $(MK_PATH)/config.mk
 
@@ -29,8 +29,7 @@ TARGET=adxl345_spi
 
 PREFIX = arm-none-eabi-
 # binaries
-# GCC_PATH="d:/tools/arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi/bin/"
-GCC_PATH="d:/tools/STM32/arm-gnu-toolchain-15.2.rel1/bin/"
+GCC_PATH="d:/tools/arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi/bin/"
 # $(info GCC_PATH=$(GCC_PATH))
 
 PREPROCESSOR_TOOL =$(GCC_PATH)/$(PREFIX)cpp

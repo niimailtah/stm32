@@ -1,8 +1,10 @@
-#include <stdbool.h>
+// main.c
 #include <stdio.h>
-#include "gpio.h"
+#include <stdint.h>
+#include "stm32f4xx.h"
 #include "uart.h"
 #include "adxl345.h"
+
 
 // Variables for storing accelerometer data
 int16_t accel_x, accel_y, accel_z;
@@ -10,14 +12,15 @@ double accel_x_g, accel_y_g, accel_z_g;
 
 uint8_t data_buffer[6];
 
+
 int main(void)
 {
-	uart_init();
+    uart_init();
 
     // Initialize the ADXL345 accelerometer
     adxl_init();
 
-    while (true)
+    while (1)
     {
         // Read accelerometer data starting from the data start register
         adxl_read(ADXL345_REG_DATA_START, data_buffer);
@@ -32,25 +35,9 @@ int main(void)
         accel_y_g = accel_y * 0.0078;
         accel_z_g = accel_z * 0.0078;
 
-
-        // Print values for debugging purposes
+        //  Print values for debugging purposes
         printf("accel_x : %d accel_y : %d  accel_z : %d\n\r",accel_x,accel_y,accel_z);
     }
 
-
-	/* Initialize LED */
-	led_init();
-
-	while (true)
-	{
-		led_on();
-		for (int i = 0; i < 100000; ++i)
-		{
-		}
-
-		led_off();
-		for (int i = 0; i < 100000; ++i)
-		{
-		}
-	}
+    return 0;
 }

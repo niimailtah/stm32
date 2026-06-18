@@ -1,4 +1,4 @@
-#include "stm32f4xx.h"
+// tim.h
 #ifndef TIM_H_
 #define TIM_H_
 
@@ -6,4 +6,4 @@
 
 void tim2_1hz_init(void);
 
-#endif
+#endif // TIM_H_

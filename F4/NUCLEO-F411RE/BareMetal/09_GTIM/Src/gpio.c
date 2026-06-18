@@ -1,3 +1,6 @@
+// gpio.c
+#include <stdbool.h>
+#include "stm32f4xx.h"
 #include "gpio.h"
 
 #define GPIOAEN		(1U<<0)
@@ -11,10 +14,10 @@
 //
 void led_init(void)
 {
-	/*Enable clock access to GPIOA*/
+	/* Enable clock access to GPIOA */
 	RCC->AHB1ENR |= GPIOAEN;
 
-	/*Set PA5 mode to output mode*/
+	/* Set PA5 mode to output mode */
 	GPIOA->MODER |= (1U<<10);
 	GPIOA->MODER &= ~(1U<<11);
 }
@@ -22,21 +25,21 @@ void led_init(void)
 //
 void led_on(void)
 {
-	/*Set PA5 high*/
+	/* Set PA5 high */
 	GPIOA->BSRR |= LED_BS5;
 }
 
 //
 void led_off(void)
 {
-	/*Set PA5 high*/
+	/* Set PA5 high */
 	GPIOA->BSRR |= LED_BR5;
 }
 
 //
 void led_toggle(void)
 {
-	/*Toggle PA5*/
+	/* Toggle PA5 */
 	GPIOA->ODR ^= LED_PIN;
 }
 

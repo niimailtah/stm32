@@ -1,10 +1,11 @@
+// main.c
 #include <stdio.h>
 #include <stdbool.h>
 #include "uart.h"
 
 int main(void)
 {
-	/*Initialize debug UART*/
+	/* Initialize debug UART */
 	uart_init();
 
 	while (true)

@@ -1,19 +1,20 @@
+// spi,c
 #include "spi.h"
 
-#define SPI1EN          (1U<<12)
-#define GPIOAEN			(1U<<0)
+#define SPI1EN		(1U<<12)
+#define GPIOAEN		(1U<<0)
 
-#define SR_TXE			(1U<<1)
-#define SR_RXNE			(1U<<0)
+#define SR_TXE		(1U<<1)
+#define SR_RXNE		(1U<<0)
 
-#define SR_BSY			(1U<<7)
+#define SR_BSY		(1U<<7)
 
+// PA5 -> CLK
+// PA6 -> MISO
+// PA7 -> MOSI
 
-//PA5 -> CLK
-//PA6 -> MISO
-//PA7 -> MOSI
+// PA9 -> Slave Select
 
-//PA9 -> Slave Select
 
 void spi_gpio_init(void)
 {
@@ -21,6 +22,7 @@ void spi_gpio_init(void)
     RCC->AHB1ENR |= GPIOAEN;
 
     /* Set PA5,PA6,PA7 mode to alternate function */
+
     /* PA5 */
     GPIOA->MODER &= ~(1U<<10);
     GPIOA->MODER |= (1U<<11);
@@ -57,6 +59,7 @@ void spi_gpio_init(void)
     GPIOA->AFR[0] &= ~(1U<<31);
 }
 
+
 void spi1_config(void)
 {
     /* Enable clock access to SPI1 module */
@@ -64,8 +67,8 @@ void spi1_config(void)
 
     /* Set clock to fPCLK/4 */
     SPI1->CR1 |= (1U<<3);
-    SPI1->CR1 &=~ (1U<<4);
-    SPI1->CR1 &=~ (1U<<5);
+    SPI1->CR1 &= ~(1U<<4);
+    SPI1->CR1 &= ~(1U<<5);
 
     /* Set CPOL to 1 and CPHA to 1 */
     SPI1->CR1 |= (1U<<0);
@@ -84,7 +87,7 @@ void spi1_config(void)
     SPI1->CR1 &= ~(1U<<11);
 
     /* Select software slave management by
-     * setting SSM=1 and SSI=1*/
+     * setting SSM=1 and SSI=1 */
     SPI1->CR1 |= (1<<8);
     SPI1->CR1 |= (1<<9);
 
@@ -92,12 +95,13 @@ void spi1_config(void)
     SPI1->CR1 |= (1<<6);
 }
 
-void spi1_transmit(uint8_t *data,uint32_t size)
+
+void spi1_transmit(uint8_t *data, uint32_t size)
 {
     uint32_t i = 0;
     uint8_t temp;
 
-    while(i<size)
+    while (i < size)
     {
         /* Wait until TXE is set */
         while (!(SPI1->SR & (SR_TXE))) {}
@@ -112,17 +116,18 @@ void spi1_transmit(uint8_t *data,uint32_t size)
     /* Wait for BUSY flag to reset */
     while ((SPI1->SR & (SR_BSY))) {}
 
-    /*Clear OVR flag*/
+    /* Clear OVR flag */
     temp = SPI1->DR;
     temp = SPI1->SR;
 }
 
-void spi1_receive(uint8_t *data,uint32_t size)
+
+void spi1_receive(uint8_t *data, uint32_t size)
 {
-    while(size)
+    while (size)
     {
         /* Send dummy data */
-        SPI1->DR =0;
+        SPI1->DR = 0;
 
         /* Wait for RXNE flag to be set */
         while (!(SPI1->SR & (SR_RXNE))) {}
@@ -133,10 +138,14 @@ void spi1_receive(uint8_t *data,uint32_t size)
     }
 }
 
+
+/* Pull low to enable */
 void cs_enable(void)
 {
-    GPIOA->ODR &=~ (1U<<9);
+    GPIOA->ODR &= ~(1U<<9);
+
 }
+
 
 /* Pull high to disable */
 void cs_disable(void)

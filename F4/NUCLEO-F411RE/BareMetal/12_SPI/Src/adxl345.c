@@ -1,10 +1,10 @@
+// adxl345.c
 #include "adxl345.h"
 
-/********PINOUT********/
-
-/* STM32      ------ ADXL345 */
-
-/* PA6(MISO)  ------ SDO
+/*************PINOUT**********/
+/*   STM32    ------ ADXL345 */
+/*
+ * PA6(MISO)  ------ SDO
  * PA7(MOSI)  ------ SDA
  * PA5(SCK)   ------ SCL
  * PA9(SS)    ------ CS
@@ -24,20 +24,20 @@ void adxl_read(uint8_t address, uint8_t * rxdata)
     cs_enable();
 
     /* Send address */
-    spi1_transmit(&address,1);
+    spi1_transmit(&address, 1);
 
     /* Read 6 bytes */
-    spi1_receive(rxdata,6);
+    spi1_receive(rxdata, 6);
 
     /* Pull cs line high to disable slave */
     cs_disable();
 }
 
+
 void adxl_write(uint8_t address, uint8_t value)
 {
-
     uint8_t data[2];
-
+  
     /* Enable multi-byte, place address into buffer */
     data[0] = address | ADXL345_MULTI_BYTE_ENABLE;
 
@@ -53,6 +53,7 @@ void adxl_write(uint8_t address, uint8_t value)
     /* Pull cs line high to disable slave */
     cs_disable();
 }
+
 
 void adxl_init(void)
 {

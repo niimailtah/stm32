@@ -1,9 +1,8 @@
 # sources.mk
 
 SOURCES_C += $(MK_PATH)/Src/main.c
-SOURCES_C += $(MK_PATH)/Src/gpio.c
-SOURCES_C += $(MK_PATH)/Src/uart.c
 SOURCES_C += $(MK_PATH)/Src/spi.c
+SOURCES_C += $(MK_PATH)/Src/uart.c
 SOURCES_C += $(MK_PATH)/Src/adxl345.c
 SOURCES_C += $(MK_PATH)/Src/syscalls.c
 SOURCES_C += $(MK_PATH)/Src/sysmem.c

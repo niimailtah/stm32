@@ -1,3 +1,5 @@
+// tim.c
+#include "stm32f4xx.h"
 #include "tim.h"
 
 #define TIM2EN	    (1U<<0)

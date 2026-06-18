@@ -1,5 +1,5 @@
-$loc = "Home"
-#$loc = "Work"
+#$loc = "Home"
+$loc = "Work"
 
 if ($loc -eq "Home") {
 	#Windows build tools
@@ -27,7 +27,7 @@ elseif ($loc -eq "Work") {
 	#Arm GNU toolchain
 	$Env:PATH += ";d:\tools\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\bin\"
 
-	Set-Location -Path "c:\Users\chuwi\STM32CubeIDE\F4\NUCLEO-F411RE\BareMetal\07_GpioOutput\"
+	Set-Location -Path "c:\Users\chuwi\STM32CubeIDE\F4\NUCLEO-F411RE\BareMetal\12_SPI\"
 }
 else {
 	Write-Output "Fail"

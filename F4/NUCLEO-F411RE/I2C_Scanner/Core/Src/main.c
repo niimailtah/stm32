@@ -46,9 +46,10 @@
 
 /* USER CODE BEGIN PV */
 uint8_t Buffer[25] = {0};
-uint8_t Space[] = " - ";
+uint8_t Space[] = " -- ";
+uint8_t NewLine[] = "\r\n";
 uint8_t StartMSG[] = "Starting I2C Scanning: \r\n";
-uint8_t EndMSG[] = "Done! \r\n\r\n";
+uint8_t EndMSG[] = "\r\n ------ Done! ----- \r\n\r\n";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,6 +71,14 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	// определяем где выполняется программа, и корректируем расположение
+	// таблицы векторов
+	uint32_t retPCasm(void); // небольшая функция для определения где
+	// выполняется программа в FLASH или RAM
+	if ((retPCasm() & 0x20000000) != 0)
+	{
+		*((uint32_t *)0xe000ed08) = 0x20000000; /* FlagDebugInRAM=1;*/
+	}
 
   /* USER CODE END 1 */
 
@@ -100,12 +109,17 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   HAL_Delay(1000);
-  HAL_GPIO_WritePin(SDO_GPIO_Port, SDO_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(SDO_GPIO_Port, SDO_Pin, GPIO_PIN_SET);
   /*-[ I2C Bus Scanning ]-*/
   	  uint8_t i = 0, ret, i2c_address;
       HAL_UART_Transmit(&huart2, StartMSG, sizeof(StartMSG), 10000);
+      HAL_UART_Transmit(&huart2, Space, sizeof(Space), 10000);
       for (i = 1; i < 128; ++i)
       {
+          if (i % 16 == 0)
+          {
+        	  HAL_UART_Transmit(&huart2, NewLine, sizeof(NewLine), 10000);
+          }
           ret = HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(i<<1), 3, 5);
           if (ret != HAL_OK) /* No ACK Received At That Address */
           {
@@ -115,7 +129,11 @@ int main(void)
           {
               sprintf((char *)Buffer, "0x%X", i);
               HAL_UART_Transmit(&huart2, Buffer, sizeof(Buffer), 10000);
-              if (i == 0x68 || i == 0x69)
+              if (i == 0x68 || i == 0x69) // MPU6050
+              {
+            	  i2c_address = i;
+              }
+              if (i == 0x53 || i == 0x1D) // ADXL345
               {
             	  i2c_address = i;
               }
