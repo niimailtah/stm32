@@ -1,4 +1,4 @@
-// mail.c
+// main.c
 #include <stdio.h>
 #include <stdbool.h>
 #include "adc.h"
