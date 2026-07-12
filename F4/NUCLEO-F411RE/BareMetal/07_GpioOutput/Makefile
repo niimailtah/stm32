@@ -29,7 +29,7 @@ TARGET=gpiooutput
 
 PREFIX = arm-none-eabi-
 # binaries
-GCC_PATH="d:/tools/arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi/bin/"
+GCC_PATH="d:/tools/STM32/arm-gnu-toolchain-15.2.rel1/bin"
 # $(info GCC_PATH=$(GCC_PATH))
 
 PREPROCESSOR_TOOL =$(GCC_PATH)/$(PREFIX)cpp
