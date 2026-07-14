@@ -19,7 +19,9 @@
 #include <stdio.h>
 #include "STM32F411/rccregisters.hpp"
 #include "STM32F411/gpioaregisters.hpp"
+#include "STM32F411/tim2registers.hpp"
 #include "uart.h"
+#include "tim.h"
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
@@ -30,18 +32,19 @@ int main(void)
 	RCC::AHB1ENR::GPIOAEN::Enable::Set();
 	GPIOA::MODER::MODER5::Output::Set();
 	uart_init();
+	tim2_1hz_init();
 
     /* Loop forever */
 	while (true)
 	{
 		GPIOA::BSRR::BS5::High::Write();
-		for (int i{0}; i < 100000; ++i)
-		{
-		}
+		while (!(TIM2::SR::UIF::Enable::IsSet())) {} /* Wait for UIF */
+		TIM2::SR::UIF::Disable::Set();               /* Clear UIF */
+
 		GPIOA::BSRR::BR5::Low::Write();
-		for (int i{0}; i < 100000; ++i)
-		{
-		}
+		while (!(TIM2::SR::UIF::Enable::IsSet())) {} /* Wait for UIF */
+		TIM2::SR::UIF::Disable::Set();               /* Clear UIF */
+
 		printf("Hello from STM32...\r\n");
 	}
 }

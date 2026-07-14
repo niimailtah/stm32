@@ -50,6 +50,7 @@ set (PROJECT_SOURCES
 	# LIST SOURCE FILES HERE
 	Startup/startup_stm32f411retx.s
 	Sources/uart.cpp
+	Sources/tim.cpp
 	Sources/main.cpp
 	Sources/syscalls.c
 	Sources/sysmem.c

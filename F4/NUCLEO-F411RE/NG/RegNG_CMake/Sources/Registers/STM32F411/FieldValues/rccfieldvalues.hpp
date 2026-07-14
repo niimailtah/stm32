@@ -954,8 +954,8 @@ struct RCC_APB1ENR_TIM3EN_Values: public RegisterField<Reg, offset, size, Access
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct RCC_APB1ENR_TIM2EN_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<RCC_APB1ENR_TIM2EN_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<RCC_APB1ENR_TIM2EN_Values, BaseType, 1U> ;
+  using Disable = FieldValue<RCC_APB1ENR_TIM2EN_Values, BaseType, 0U> ;
+  using Enable = FieldValue<RCC_APB1ENR_TIM2EN_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
