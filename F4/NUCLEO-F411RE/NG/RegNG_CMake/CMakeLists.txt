@@ -51,6 +51,7 @@ set (PROJECT_SOURCES
 	Startup/startup_stm32f411retx.s
 	Sources/uart.cpp
 	Sources/tim.cpp
+	Sources/i2c.cpp
 	Sources/main.cpp
 	Sources/syscalls.c
 	Sources/sysmem.c

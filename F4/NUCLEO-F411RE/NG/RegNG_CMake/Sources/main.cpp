@@ -38,12 +38,12 @@ int main(void)
 	while (true)
 	{
 		GPIOA::BSRR::BS5::High::Write();
-		while (!(TIM2::SR::UIF::Enable::IsSet())) {} /* Wait for UIF */
-		TIM2::SR::UIF::Disable::Set();               /* Clear UIF */
+		while (!(TIM2::SR::UIF::InterruptPending::IsSet())) {} /* Wait for UIF */
+		TIM2::SR::UIF::NoInterruptPending::Set();              /* Clear UIF */
 
 		GPIOA::BSRR::BR5::Low::Write();
-		while (!(TIM2::SR::UIF::Enable::IsSet())) {} /* Wait for UIF */
-		TIM2::SR::UIF::Disable::Set();               /* Clear UIF */
+		while (!(TIM2::SR::UIF::InterruptPending::IsSet())) {} /* Wait for UIF */
+		TIM2::SR::UIF::NoInterruptPending::Set();              /* Clear UIF */
 
 		printf("Hello from STM32...\r\n");
 	}

@@ -158,266 +158,265 @@ struct GPIOA_MODER_MODER0_Values: public RegisterField<Reg, offset, size, Access
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT15_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT15_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT15_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT15_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT15_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT14_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT14_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT14_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT14_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT14_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT13_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT13_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT13_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT13_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT13_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT12_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT12_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT12_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT12_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT12_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT11_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT11_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT11_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT11_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT11_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT10_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT10_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT10_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT10_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT10_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT9_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT9_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT9_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT9_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT9_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT8_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT8_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT8_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT8_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT8_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT7_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT7_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT7_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT7_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT7_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT6_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT6_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT6_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT6_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT6_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT5_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT5_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT5_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT5_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT5_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT4_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT4_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT4_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT4_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT4_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT3_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT3_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT3_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT3_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT3_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT2_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT2_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT2_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT2_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT2_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT1_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT1_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT1_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT1_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT1_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OTYPER_OT0_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OTYPER_OT0_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OTYPER_OT0_Values, BaseType, 1U> ;
+  using OutputPushPull = FieldValue<GPIOA_OTYPER_OT0_Values, BaseType, 0U> ;
+  using OutputOpenDrain = FieldValue<GPIOA_OTYPER_OT0_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR15_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR15_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR14_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR14_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR13_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR13_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR12_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR12_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR11_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR11_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR10_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR10_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR9_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR9_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR8_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR8_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR7_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR7_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR6_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR6_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR5_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR5_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR4_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR4_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR3_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR3_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR2_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR2_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR1_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR1_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_OSPEEDR_OSPEEDR0_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 3U> ;
+  using LowSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 0U> ;
+  using MediumSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 1U> ;
+  using FastSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 2U> ;
+  using HighSpeed = FieldValue<GPIOA_OSPEEDR_OSPEEDR0_Values, BaseType, 3U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_PUPDR_PUPDR15_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 3U> ;
+  using NoPullUpNoPullDown = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 0U> ;
+  using PullUp = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 1U> ;
+  using PullDown = FieldValue<GPIOA_PUPDR_PUPDR15_Values, BaseType, 2U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
@@ -974,15 +973,15 @@ struct GPIOA_BSRR_BS0_Values: public RegisterField<Reg, offset, size, AccessMode
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_LCKR_LCKK_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_LCKR_LCKK_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_LCKR_LCKK_Values, BaseType, 1U> ;
+  using LockKeyNotActive = FieldValue<GPIOA_LCKR_LCKK_Values, BaseType, 0U> ;
+  using LockKeyActive = FieldValue<GPIOA_LCKR_LCKK_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_LCKR_LCK15_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_LCKR_LCK15_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_LCKR_LCK15_Values, BaseType, 1U> ;
+  using UnLocked = FieldValue<GPIOA_LCKR_LCK15_Values, BaseType, 0U> ;
+  using Locked = FieldValue<GPIOA_LCKR_LCK15_Values, BaseType, 1U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
@@ -1093,106 +1092,106 @@ struct GPIOA_LCKR_LCK0_Values: public RegisterField<Reg, offset, size, AccessMod
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_AFRL_AFRL7_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 3U> ;
-  using Value4 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 4U> ;
-  using Value5 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 5U> ;
-  using Value6 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 6U> ;
-  using Value7 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 7U> ;
-  using Value8 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 8U> ;
-  using Value9 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 9U> ;
-  using Value10 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 10U> ;
-  using Value11 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 11U> ;
-  using Value12 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 12U> ;
-  using Value13 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 13U> ;
-  using Value14 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 14U> ;
-  using Value15 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 15U> ;
+  using Af0 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 0U> ;
+  using Af1 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 1U> ;
+  using Af2 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 2U> ;
+  using Af3 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 3U> ;
+  using Af4 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 4U> ;
+  using Af5 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 5U> ;
+  using Af6 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 6U> ;
+  using Af7 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 7U> ;
+  using Af8 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 8U> ;
+  using Af9 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 9U> ;
+  using Af10 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 10U> ;
+  using Af11 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 11U> ;
+  using Af12 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 12U> ;
+  using Af13 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 13U> ;
+  using Af14 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 14U> ;
+  using Af15 = FieldValue<GPIOA_AFRL_AFRL7_Values, BaseType, 15U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_AFRL_AFRL6_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 3U> ;
-  using Value4 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 4U> ;
-  using Value5 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 5U> ;
-  using Value6 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 6U> ;
-  using Value7 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 7U> ;
-  using Value8 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 8U> ;
-  using Value9 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 9U> ;
-  using Value10 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 10U> ;
-  using Value11 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 11U> ;
-  using Value12 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 12U> ;
-  using Value13 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 13U> ;
-  using Value14 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 14U> ;
-  using Value15 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 15U> ;
+  using Af0 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 0U> ;
+  using Af1 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 1U> ;
+  using Af2 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 2U> ;
+  using Af3 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 3U> ;
+  using Af4 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 4U> ;
+  using Af5 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 5U> ;
+  using Af6 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 6U> ;
+  using Af7 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 7U> ;
+  using Af8 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 8U> ;
+  using Af9 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 9U> ;
+  using Af10 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 10U> ;
+  using Af11 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 11U> ;
+  using Af12 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 12U> ;
+  using Af13 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 13U> ;
+  using Af14 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 14U> ;
+  using Af15 = FieldValue<GPIOA_AFRL_AFRL6_Values, BaseType, 15U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_AFRL_AFRL5_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 3U> ;
-  using Value4 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 4U> ;
-  using Value5 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 5U> ;
-  using Value6 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 6U> ;
-  using Value7 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 7U> ;
-  using Value8 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 8U> ;
-  using Value9 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 9U> ;
-  using Value10 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 10U> ;
-  using Value11 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 11U> ;
-  using Value12 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 12U> ;
-  using Value13 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 13U> ;
-  using Value14 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 14U> ;
-  using Value15 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 15U> ;
+  using Af0 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 0U> ;
+  using Af1 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 1U> ;
+  using Af2 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 2U> ;
+  using Af3 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 3U> ;
+  using Af4 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 4U> ;
+  using Af5 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 5U> ;
+  using Af6 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 6U> ;
+  using Af7 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 7U> ;
+  using Af8 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 8U> ;
+  using Af9 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 9U> ;
+  using Af10 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 10U> ;
+  using Af11 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 11U> ;
+  using Af12 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 12U> ;
+  using Af13 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 13U> ;
+  using Af14 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 14U> ;
+  using Af15 = FieldValue<GPIOA_AFRL_AFRL5_Values, BaseType, 15U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_AFRL_AFRL4_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 3U> ;
-  using Value4 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 4U> ;
-  using Value5 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 5U> ;
-  using Value6 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 6U> ;
-  using Value7 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 7U> ;
-  using Value8 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 8U> ;
-  using Value9 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 9U> ;
-  using Value10 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 10U> ;
-  using Value11 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 11U> ;
-  using Value12 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 12U> ;
-  using Value13 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 13U> ;
-  using Value14 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 14U> ;
-  using Value15 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 15U> ;
+  using Af0 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 0U> ;
+  using Af1 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 1U> ;
+  using Af2 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 2U> ;
+  using Af3 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 3U> ;
+  using Af4 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 4U> ;
+  using Af5 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 5U> ;
+  using Af6 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 6U> ;
+  using Af7 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 7U> ;
+  using Af8 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 8U> ;
+  using Af9 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 9U> ;
+  using Af10 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 10U> ;
+  using Af11 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 11U> ;
+  using Af12 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 12U> ;
+  using Af13 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 13U> ;
+  using Af14 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 14U> ;
+  using Af15 = FieldValue<GPIOA_AFRL_AFRL4_Values, BaseType, 15U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
 struct GPIOA_AFRL_AFRL3_Values: public RegisterField<Reg, offset, size, AccessMode> 
 {
-  using Value0 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 0U> ;
-  using Value1 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 1U> ;
-  using Value2 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 2U> ;
-  using Value3 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 3U> ;
-  using Value4 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 4U> ;
-  using Value5 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 5U> ;
-  using Value6 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 6U> ;
-  using Value7 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 7U> ;
-  using Value8 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 8U> ;
-  using Value9 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 9U> ;
-  using Value10 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 10U> ;
-  using Value11 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 11U> ;
-  using Value12 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 12U> ;
-  using Value13 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 13U> ;
-  using Value14 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 14U> ;
-  using Value15 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 15U> ;
+  using Af0 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 0U> ;
+  using Af1 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 1U> ;
+  using Af2 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 2U> ;
+  using Af3 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 3U> ;
+  using Af4 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 4U> ;
+  using Af5 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 5U> ;
+  using Af6 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 6U> ;
+  using Af7 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 7U> ;
+  using Af8 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 8U> ;
+  using Af9 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 9U> ;
+  using Af10 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 10U> ;
+  using Af11 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 11U> ;
+  using Af12 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 12U> ;
+  using Af13 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 13U> ;
+  using Af14 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 14U> ;
+  using Af15 = FieldValue<GPIOA_AFRL_AFRL3_Values, BaseType, 15U> ;
 } ;
 
 template <typename Reg, size_t offset, size_t size, typename AccessMode, typename BaseType> 
