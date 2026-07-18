@@ -6,6 +6,7 @@
  ******************************************************************************
  */
 #include <stdint.h>
+#include "i2c.h"
 #include "STM32F411/rccregisters.hpp"
 #include "STM32F411/gpiobregisters.hpp"
 #include "STM32F411/i2c1registers.hpp"

@@ -52,6 +52,7 @@ set (PROJECT_SOURCES
 	Sources/uart.cpp
 	Sources/tim.cpp
 	Sources/i2c.cpp
+	Sources/spi.cpp
 	Sources/main.cpp
 	Sources/syscalls.c
 	Sources/sysmem.c
