@@ -45,8 +45,11 @@ void BMI270_burst_write_data(uint8_t reg,uint8_t* data, uint16_t size);
 /* ===========================================================================*/
 extern "C" void main_BMI270(void)
 {
-	init();
-	loop();
+
+
+
+//	init();
+//	loop();
 
 	return;
 }
@@ -296,3 +299,4 @@ void BMI270_burst_write_data(uint8_t reg, uint8_t* data, uint16_t size)
 	HAL_StatusTypeDef status;
 	status = HAL_I2C_Mem_Write(&hi2c1, 0x68 << 1, reg, 1, data, size, 100);
 }
+

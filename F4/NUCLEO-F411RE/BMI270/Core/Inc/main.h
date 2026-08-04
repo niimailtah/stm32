@@ -65,6 +65,8 @@ void SystemClock_Config(void);
 /* Private defines -----------------------------------------------------------*/
 #define BTN_Pin GPIO_PIN_13
 #define BTN_GPIO_Port GPIOC
+#define BMI270_CS_Pin GPIO_PIN_10
+#define BMI270_CS_GPIO_Port GPIOB
 #define OLED_DC_Pin GPIO_PIN_7
 #define OLED_DC_GPIO_Port GPIOC
 #define SDO_Pin GPIO_PIN_8
