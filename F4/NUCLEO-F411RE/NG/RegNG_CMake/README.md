@@ -16,3 +16,9 @@
 Для старта проекта использовался STM32CubeIDE. Новый пустой проект для CMake.
 После генерации чуть изменил `CMakeLists.txt`. После этого переименовал `main.c` в `main.cpp`, скомпилировал и залил прошивку.
 В отличии от `RegNG`, который также реализует ту же идею, теперь весь проект на `C++`, без `HAL` и `CMSIS`.
+
+## Заливка
+
+```
+c:\ST\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe --connect port=swd --download Debug/RegNG_CMake.elf -hardRst
+```

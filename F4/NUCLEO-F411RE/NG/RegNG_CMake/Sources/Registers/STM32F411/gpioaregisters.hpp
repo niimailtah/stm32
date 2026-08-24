@@ -36,7 +36,7 @@ struct GPIOA
     using MODER2 = GPIOA_MODER_MODER2_Values<GPIOA::MODER, 4, 2, ReadWriteMode, GPIOAMODERBase> ;
     using MODER1 = GPIOA_MODER_MODER1_Values<GPIOA::MODER, 2, 2, ReadWriteMode, GPIOAMODERBase> ;
     using MODER0 = GPIOA_MODER_MODER0_Values<GPIOA::MODER, 0, 2, ReadWriteMode, GPIOAMODERBase> ;
-    using FieldValues = GPIOA_MODER_MODER0_Values<GPIOA::MODER, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_MODER_Values<GPIOA::MODER, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -62,7 +62,7 @@ struct GPIOA
     using OT2 = GPIOA_OTYPER_OT2_Values<GPIOA::OTYPER, 2, 1, ReadWriteMode, GPIOAOTYPERBase> ;
     using OT1 = GPIOA_OTYPER_OT1_Values<GPIOA::OTYPER, 1, 1, ReadWriteMode, GPIOAOTYPERBase> ;
     using OT0 = GPIOA_OTYPER_OT0_Values<GPIOA::OTYPER, 0, 1, ReadWriteMode, GPIOAOTYPERBase> ;
-    using FieldValues = GPIOA_OTYPER_OT0_Values<GPIOA::OTYPER, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_OTYPER_Values<GPIOA::OTYPER, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -88,7 +88,7 @@ struct GPIOA
     using OSPEEDR2 = GPIOA_OSPEEDR_OSPEEDR2_Values<GPIOA::OSPEEDR, 4, 2, ReadWriteMode, GPIOAOSPEEDRBase> ;
     using OSPEEDR1 = GPIOA_OSPEEDR_OSPEEDR1_Values<GPIOA::OSPEEDR, 2, 2, ReadWriteMode, GPIOAOSPEEDRBase> ;
     using OSPEEDR0 = GPIOA_OSPEEDR_OSPEEDR0_Values<GPIOA::OSPEEDR, 0, 2, ReadWriteMode, GPIOAOSPEEDRBase> ;
-    using FieldValues = GPIOA_OSPEEDR_OSPEEDR0_Values<GPIOA::OSPEEDR, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_OSPEEDR_Values<GPIOA::OSPEEDR, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -114,7 +114,7 @@ struct GPIOA
     using PUPDR2 = GPIOA_PUPDR_PUPDR2_Values<GPIOA::PUPDR, 4, 2, ReadWriteMode, GPIOAPUPDRBase> ;
     using PUPDR1 = GPIOA_PUPDR_PUPDR1_Values<GPIOA::PUPDR, 2, 2, ReadWriteMode, GPIOAPUPDRBase> ;
     using PUPDR0 = GPIOA_PUPDR_PUPDR0_Values<GPIOA::PUPDR, 0, 2, ReadWriteMode, GPIOAPUPDRBase> ;
-    using FieldValues = GPIOA_PUPDR_PUPDR0_Values<GPIOA::PUPDR, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_PUPDR_Values<GPIOA::PUPDR, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -140,7 +140,7 @@ struct GPIOA
     using IDR2 = GPIOA_IDR_IDR2_Values<GPIOA::IDR, 2, 1, ReadMode, GPIOAIDRBase> ;
     using IDR1 = GPIOA_IDR_IDR1_Values<GPIOA::IDR, 1, 1, ReadMode, GPIOAIDRBase> ;
     using IDR0 = GPIOA_IDR_IDR0_Values<GPIOA::IDR, 0, 1, ReadMode, GPIOAIDRBase> ;
-    using FieldValues = GPIOA_IDR_IDR0_Values<GPIOA::IDR, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_IDR_Values<GPIOA::IDR, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -166,7 +166,7 @@ struct GPIOA
     using ODR2 = GPIOA_ODR_ODR2_Values<GPIOA::ODR, 2, 1, ReadWriteMode, GPIOAODRBase> ;
     using ODR1 = GPIOA_ODR_ODR1_Values<GPIOA::ODR, 1, 1, ReadWriteMode, GPIOAODRBase> ;
     using ODR0 = GPIOA_ODR_ODR0_Values<GPIOA::ODR, 0, 1, ReadWriteMode, GPIOAODRBase> ;
-    using FieldValues = GPIOA_ODR_ODR0_Values<GPIOA::ODR, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_ODR_Values<GPIOA::ODR, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -208,7 +208,7 @@ struct GPIOA
     using BS2 = GPIOA_BSRR_BS2_Values<GPIOA::BSRR, 2, 1, WriteMode, GPIOABSRRBase> ;
     using BS1 = GPIOA_BSRR_BS1_Values<GPIOA::BSRR, 1, 1, WriteMode, GPIOABSRRBase> ;
     using BS0 = GPIOA_BSRR_BS0_Values<GPIOA::BSRR, 0, 1, WriteMode, GPIOABSRRBase> ;
-    using FieldValues = GPIOA_BSRR_BS0_Values<GPIOA::BSRR, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_BSRR_Values<GPIOA::BSRR, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -253,7 +253,7 @@ struct GPIOA
     using AFRL2 = GPIOA_AFRL_AFRL2_Values<GPIOA::AFRL, 8, 4, ReadWriteMode, GPIOAAFRLBase> ;
     using AFRL1 = GPIOA_AFRL_AFRL1_Values<GPIOA::AFRL, 4, 4, ReadWriteMode, GPIOAAFRLBase> ;
     using AFRL0 = GPIOA_AFRL_AFRL0_Values<GPIOA::AFRL, 0, 4, ReadWriteMode, GPIOAAFRLBase> ;
-    using FieldValues = GPIOA_AFRL_AFRL0_Values<GPIOA::AFRL, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_AFRL_Values<GPIOA::AFRL, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 
@@ -271,7 +271,7 @@ struct GPIOA
     using AFRH10 = GPIOA_AFRH_AFRH10_Values<GPIOA::AFRH, 8, 4, ReadWriteMode, GPIOAAFRHBase> ;
     using AFRH9 = GPIOA_AFRH_AFRH9_Values<GPIOA::AFRH, 4, 4, ReadWriteMode, GPIOAAFRHBase> ;
     using AFRH8 = GPIOA_AFRH_AFRH8_Values<GPIOA::AFRH, 0, 4, ReadWriteMode, GPIOAAFRHBase> ;
-    using FieldValues = GPIOA_AFRH_AFRH8_Values<GPIOA::AFRH, 0, 0, NoAccess, NoAccess> ;
+    using FieldValues = GPIOA_AFRH_Values<GPIOA::AFRH, 0, 0, NoAccess, NoAccess> ;
   } ;
 
   template<typename... T> 

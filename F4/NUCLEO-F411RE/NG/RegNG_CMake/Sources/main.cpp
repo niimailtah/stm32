@@ -22,6 +22,13 @@
 #include "STM32F411/tim2registers.hpp"
 #include "uart.h"
 #include "tim.h"
+#include "adxl345.h"
+
+// Variables for storing accelerometer data
+int16_t accel_x, accel_y, accel_z;
+double accel_x_g, accel_y_g, accel_z_g;
+
+extern uint8_t data_buffer[6];
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
@@ -31,8 +38,10 @@ int main(void)
 {
 	RCC::AHB1ENR::GPIOAEN::Enable::Set();
 	GPIOA::MODER::MODER5::Output::Set();
+
 	uart_init();
 	tim2_1hz_init();
+//    adxl_init();      // Initialize the ADXL345 accelerometer
 
     /* Loop forever */
 	while (true)
@@ -45,6 +54,19 @@ int main(void)
 		while (!(TIM2::SR::UIF::InterruptPending::IsSet())) {} /* Wait for UIF */
 		TIM2::SR::UIF::NoInterruptPending::Set();              /* Clear UIF */
 
+//        // Read accelerometer data starting from the data start register
+//    	adxl_read_values(ADXL345_REG_DATA_START);
+//
+//        // Combine high and low bytes to form the accelerometer data
+//        accel_x = (int16_t)((data_buffer[1] << 8) | data_buffer[0]);
+//        accel_y = (int16_t)((data_buffer[3] << 8) | data_buffer[2]);
+//        accel_z = (int16_t)((data_buffer[5] << 8) | data_buffer[4]);
+//
+//        // Convert raw data to g values
+//        accel_x_g = accel_x * 0.0078;
+//        accel_y_g = accel_y * 0.0078;
+//        accel_z_g = accel_z * 0.0078;
+//        printf("accel_x : %d\taccel_y : %d\taccel_z : %d\r\n", accel_x, accel_y, accel_z);
 		printf("Hello from STM32...\r\n");
 	}
 }
