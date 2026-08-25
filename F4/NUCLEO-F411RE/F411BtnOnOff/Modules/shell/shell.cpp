@@ -5,10 +5,15 @@
  */
 
 #include "shell.hpp"
+#include "button.hpp"
 #include "usart.h"
+#include "gpio.h"
 #include <string.h>
 #include <stdio.h>
 
+Button redButton{RedButton_GPIO_Port, RedButton_Pin};
+Button blueButton{BlueButton_GPIO_Port, BlueButton_Pin};
+Button greenButton{GreenButton_GPIO_Port, GreenButton_Pin};
 
 Shell::Shell() : m_huart{&huart2}
 {}
@@ -22,6 +27,26 @@ void Shell::Init()
 
 void Shell::Process()
 {
+	char pData[255]{0};
+	uint32_t tick{HAL_GetTick()};
+
+	redButton.Update();
+	blueButton.Update();
+	greenButton.Update();
+	if (redButton.isDown())
+	{
+		sprintf(pData, "%lu: %s", tick, "Red button down\r\n");
+	}
+	if (blueButton.isDown())
+	{
+		sprintf(pData, "%lu: %s", tick, "Blue button down\r\n");
+	}
+	if (greenButton.isDown())
+	{
+		sprintf(pData, "%lu: %s", tick, "Green button down\r\n");
+	}
+	sendResponse((char*)pData);
+
 	if (m_commandReceived)
 	{
 		m_uartBuffer[m_uartIndex] = '\0';  // Null-terminate the received command
