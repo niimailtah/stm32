@@ -10,6 +10,8 @@
 #include "demos.h"
 
 
+//-------------------------------
+extern RNG_HandleTypeDef hrng;
 //-------------------------
 extern u16  getscanline(void);
 //-------------------------
@@ -20,7 +22,6 @@ extern u16  getscanline(void);
 
 static void half_sec_delay(void);
 static void wait_t(void);
-
 
 static void demo_01(void);
 static void demo_02(void);

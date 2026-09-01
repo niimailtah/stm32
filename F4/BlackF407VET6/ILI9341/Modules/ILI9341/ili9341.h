@@ -9,11 +9,15 @@
 // EU-Love embedded development
 // http://euse.taobao.com
 //-------------------------------------------------------------------------*/
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <inttypes.h>
 
 //+++++++++++++++++++++++++++ Type Declaration ++++++++++++++++++++++++++++++++++//
 //!You should modify it for different c compiler.
-typedef unsigned char       bool;
+//typedef unsigned char       bool;
 typedef          char       ascii;
 typedef unsigned char       u8;
 typedef signed   char       s8;
@@ -532,5 +536,8 @@ extern void LCD_ClrScr(u16 BackColor);
 //------------------------- Point---------------------- -------
 // Display a color as color point in x0, y0 position
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

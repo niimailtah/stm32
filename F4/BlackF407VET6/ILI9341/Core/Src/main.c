@@ -26,8 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ili9341.h"
-#include "demos.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,6 +69,12 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	// определяем где выполняется программа, и корректируем расположение таблицы векторов
+	uint32_t retPCasm(void); // небольшая функция для определения где выполняется программа в FLASH или RAM
+	if ((retPCasm() & 0x20000000) != 0)
+	{
+	    SCB->VTOR = 0x20000000; /* FlagDebugInRAM=1;*/
+	}
 
   /* USER CODE END 1 */
 
@@ -96,8 +101,8 @@ int main(void)
   MX_RNG_Init();
   MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
-  LCD_ILI9341_init();
-  start_demos();
+  void app_wrapper();
+  app_wrapper();
 
   /* USER CODE END 2 */
 
