@@ -23,12 +23,12 @@ extern u16  getscanline(void);
 static void half_sec_delay(void);
 static void wait_t(void);
 
-static void demo_01(void);
-static void demo_02(void);
-static void demo_03(void);
-static void demo_04(void);
-static void demo_05(void);
-static void demo_06(void);
+//static void demo_01(void);
+//static void demo_02(void);
+//static void demo_03(void);
+//static void demo_04(void);
+//static void demo_05(void);
+//static void demo_06(void);
 static void demo_07(void);
 static void demo_08(void);
 static void demo_09(void);
@@ -48,12 +48,12 @@ __STATIC_INLINE void DelayMicro(__IO uint32_t micros)
 //-------------------------
 void start_demos(void)
 {
-    demo_01();
-    demo_02();
-    demo_03();
-    demo_04();
-    demo_05();
-    demo_06();
+//    demo_01();
+//    demo_02();
+//    demo_03();
+//    demo_04();
+//    demo_05();
+//    demo_06();
     demo_07();
     demo_08();
     demo_09();
