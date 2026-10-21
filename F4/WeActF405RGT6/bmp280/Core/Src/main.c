@@ -125,18 +125,18 @@ int main(void)
 
   /*-[ I2C Bus Scanning ]-*/
   uint8_t i = 0, ret, i2c_address = 0x00, mem_address = 0x00;
-  printf(StartMSG);
-  printf(Space);
+  printf((char *)StartMSG);
+  printf((char *)Space);
   for (i = 1; i < 128; ++i)
   {
       if (i % 16 == 0)
       {
-          printf(NewLine);
+          printf((char *)NewLine);
       }
       ret = HAL_I2C_IsDeviceReady(&hi2c2, (uint16_t)(i<<1), 3, 5);
       if (ret != HAL_OK) /* No ACK Received At That Address */
       {
-          printf(Space);
+          printf((char *)Space);
       }
       else if(ret == HAL_OK)
       {
@@ -156,7 +156,7 @@ int main(void)
           }
       }
   }
-  printf(EndMSG);
+  printf((char *)EndMSG);
   /*--[ Scanning Done ]--*/
   uint8_t chip_address;
   HAL_I2C_Mem_Read(&hi2c2, i2c_address << 1, mem_address, 1, &chip_address, 1, 100);
@@ -233,7 +233,7 @@ int main(void)
       printf("Hum: %.2f %% %s", huminidity, NewLine);
 #endif
 
-    printf(NewLine);
+    printf((char *)NewLine);
     HAL_Delay(1000);
 
     /* USER CODE END WHILE */
