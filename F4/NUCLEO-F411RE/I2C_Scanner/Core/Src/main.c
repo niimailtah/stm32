@@ -111,40 +111,54 @@ int main(void)
   HAL_Delay(1000);
   HAL_GPIO_WritePin(SDO_GPIO_Port, SDO_Pin, GPIO_PIN_SET);
   /*-[ I2C Bus Scanning ]-*/
-  	  uint8_t i = 0, ret, i2c_address;
-      HAL_UART_Transmit(&huart2, StartMSG, sizeof(StartMSG), 10000);
+  uint8_t i = 0, ret;
+  uint16_t i2cAddress;
+  uint16_t memAddress = 0x00;
+  HAL_UART_Transmit(&huart2, StartMSG, sizeof(StartMSG), 10000);
+  HAL_UART_Transmit(&huart2, Space, sizeof(Space), 10000);
+  for (i = 1; i < 128; ++i)
+  {
+    if (i % 16 == 0)
+    {
+      HAL_UART_Transmit(&huart2, NewLine, sizeof(NewLine), 10000);
+    }
+    ret = HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(i<<1), 3, 5);
+    if (ret != HAL_OK) /* No ACK Received At That Address */
+    {
       HAL_UART_Transmit(&huart2, Space, sizeof(Space), 10000);
-      for (i = 1; i < 128; ++i)
-      {
-          if (i % 16 == 0)
-          {
-        	  HAL_UART_Transmit(&huart2, NewLine, sizeof(NewLine), 10000);
-          }
-          ret = HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(i<<1), 3, 5);
-          if (ret != HAL_OK) /* No ACK Received At That Address */
-          {
-              HAL_UART_Transmit(&huart2, Space, sizeof(Space), 10000);
-          }
-          else if(ret == HAL_OK)
-          {
-              sprintf((char *)Buffer, "0x%X", i);
-              HAL_UART_Transmit(&huart2, Buffer, sizeof(Buffer), 10000);
-              if (i == 0x68 || i == 0x69) // MPU6050
-              {
-            	  i2c_address = i;
-              }
-              if (i == 0x53 || i == 0x1D) // ADXL345
-              {
-            	  i2c_address = i;
-              }
-          }
-      }
-      HAL_UART_Transmit(&huart2, EndMSG, sizeof(EndMSG), 10000);
-      /*--[ Scanning Done ]--*/
-      uint8_t chip_address;
-      HAL_I2C_Mem_Read(&hi2c1, i2c_address << 1, 0x00, 1, &chip_address, 1, 100);
-      sprintf((char *)Buffer, "chip id: 0x%X\r\n", chip_address);
+    }
+    else if(ret == HAL_OK)
+    {
+      sprintf((char *)Buffer, "0x%X", i);
       HAL_UART_Transmit(&huart2, Buffer, sizeof(Buffer), 10000);
+      if (i == 0x68 || i == 0x69) // MPU6050
+      {
+        i2cAddress = i;
+        memAddress = 0x00;
+      }
+      if (i == 0x53 || i == 0x1D) // ADXL345
+      {
+        i2cAddress = i;
+        memAddress = 0x00;
+      }
+      if (i == 0x18 || i == 0x19) // LIS3DH
+      {
+        i2cAddress = i;
+        memAddress = 0x0F;
+      }
+      if (i == 0x5C || i == 0x5D) // LPS22CH
+      {
+        i2cAddress = i;
+        memAddress = 0x0F;
+      }
+    }
+  }
+  HAL_UART_Transmit(&huart2, EndMSG, sizeof(EndMSG), 10000);
+  /*--[ Scanning Done ]--*/
+  uint8_t chip_address;
+  HAL_I2C_Mem_Read(&hi2c1, i2cAddress << 1, memAddress, 1, &chip_address, 1, 100);
+  sprintf((char *)Buffer, "WHO_AM_I: 0x%X\r\n", chip_address);
+  HAL_UART_Transmit(&huart2, Buffer, sizeof(Buffer), 10000);
   while (1)
   {
     /* USER CODE END WHILE */
