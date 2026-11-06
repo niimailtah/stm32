@@ -46,13 +46,22 @@
 
 /* USER CODE BEGIN PV */
 uint8_t SlaveData[2];
-uint8_t SensorData[3];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif
 
+PUTCHAR_PROTOTYPE
+{
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  return ch;
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -68,7 +77,12 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+    // определяем где выполняется программа, и корректируем расположение таблицы векторов
+    uint32_t retPCasm(void); // небольшая функция для определения где выполняется программа в FLASH или RAM
+    if ((retPCasm() & 0x20000000) != 0)
+    {
+        SCB->VTOR = 0x20000000; /* FlagDebugInRAM=1;*/
+    }
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -100,13 +114,12 @@ int main(void)
   while (1)
   {
 	  SlaveData[0] = 0x00;
-	  SlaveData[1] = 2;
+	  SlaveData[1] = (rand()%255);
 	  HAL_I2C_Master_Transmit(&hi2c1, (0x1D<<1), SlaveData, 2, 100);
+	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_I2C_Mem_Read(&hi2c1, (0x1D<<1), 0x03, 1, SensorData, 3, 100);
-	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }

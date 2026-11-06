@@ -50,7 +50,17 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif
 
+PUTCHAR_PROTOTYPE
+{
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  return ch;
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -66,7 +76,12 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+    // определяем где выполняется программа, и корректируем расположение таблицы векторов
+    uint32_t retPCasm(void); // небольшая функция для определения где выполняется программа в FLASH или RAM
+    if ((retPCasm() & 0x20000000) != 0)
+    {
+        SCB->VTOR = 0x20000000; /* FlagDebugInRAM=1;*/
+    }
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
