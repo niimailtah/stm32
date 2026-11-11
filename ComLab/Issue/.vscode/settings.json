@@ -1,0 +1,24 @@
+{
+  // Hide the following file types from the VS Code folder list.
+  "files.exclude": {
+      "**/*.4ct": true,
+      "**/*.4tc": true,
+      "**/*.fdb_latexmk": true,
+      "**/*.idv": true,
+      "**/*.lg": true,
+      "**/*.lof": true,
+      "**/*.synctex.gz": true,
+      "**/*.synctex(busy)": true,
+      "**/*.tmp": true,
+      "**/*.xref": true,
+      "**/*.fls": true,
+      "**/*.loc": true,
+      "**/*.run.xml": true,
+      "**/*.soc": true,
+      "**/*.snm": true,
+      "**/*.blg": true,
+      "**/*-SAVE-ERROR": true
+  },
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.outDir": "%DIR%/out",
+}
